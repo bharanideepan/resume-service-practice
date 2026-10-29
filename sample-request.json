@@ -1,0 +1,240 @@
+
+{
+  "candidate": {
+    "name": "Arun Kumar",
+    "designation": "Senior Software Engineer",
+    "total_experience": "6+ years of experience",
+    "overview": "Full-stack engineer specializing in scalable web applications and cloud-based solutions.",
+    "contact": "Chennai, India",
+    "email": "arun@example.com",
+    "phone": "+91-9000000000",
+    "location": "Chennai, India",
+    "linkedin": "https://www.linkedin.com/in/example"
+  },
+  "resumeContent": {
+    "skills": [
+      {
+        "category": "Frontend",
+        "items": [
+          "React",
+          "Angular",
+          "TypeScript"
+        ]
+      },
+      {
+        "category": "Backend",
+        "items": [
+          "Node.js",
+          "Java",
+          "REST APIs"
+        ]
+      },
+      {
+        "category": "Database",
+        "items": [
+          "PostgreSQL",
+          "MySQL",
+          "MongoDB"
+        ]
+      },
+      {
+        "category": "Cloud",
+        "items": [
+          "AWS",
+          "Docker",
+          "CI/CD"
+        ]
+      }
+    ],
+    "summary": {
+      "segments": [
+        {
+          "text": "Full-stack engineer experienced in "
+        },
+        {
+          "text": "building reliable web applications",
+          "bold": true
+        },
+        {
+          "text": " and APIs."
+        }
+      ]
+    },
+    "highlights": [
+      {
+        "segments": [
+          {
+            "text": "Proven expertise in "
+          },
+          {
+            "text": "modernizing enterprise applications",
+            "bold": true
+          },
+          {
+            "text": " using scalable architectures and reusable components."
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Strong experience building "
+          },
+          {
+            "text": "REST APIs and cloud integrations",
+            "bold": true
+          },
+          {
+            "text": " to improve system reliability."
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Skilled in "
+          },
+          {
+            "text": "automated testing and code reviews",
+            "bold": true
+          },
+          {
+            "text": " to maintain software quality."
+          }
+        ]
+      }
+    ],
+    "education": [
+      {
+        "qualification": "Bachelor of Engineering",
+        "institution": "Example University",
+        "year": "2019",
+        "score": ""
+      }
+    ],
+    "projects": [
+      {
+        "name": "Project Alpha",
+        "client": "Example Client",
+        "domain": "Healthcare",
+        "summary": {
+          "segments": [
+            {
+              "text": "Modernized a legacy healthcare application into "
+            },
+            {
+              "text": "modular web components",
+              "bold": true
+            },
+            {
+              "text": " using React, Node.js, and PostgreSQL."
+            }
+          ]
+        },
+        "technologies": [
+          "React",
+          "Node.js",
+          "PostgreSQL"
+        ],
+        "responsibilities": [
+          {
+            "segments": [
+              {
+                "text": "Developed "
+              },
+              {
+                "text": "accessible reusable components",
+                "bold": true
+              },
+              {
+                "text": " to improve usability and maintainability."
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Integrated "
+              },
+              {
+                "text": "REST APIs",
+                "bold": true
+              },
+              {
+                "text": " with frontend modules and backend services."
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Implemented "
+              },
+              {
+                "text": "unit tests and integration tests",
+                "bold": true
+              },
+              {
+                "text": " to improve application reliability."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Project Beta",
+        "client": "Example Retail Client",
+        "domain": "Retail",
+        "summary": {
+          "segments": [
+            {
+              "text": "Enhanced a retail analytics platform to deliver "
+            },
+            {
+              "text": "real-time reporting",
+              "bold": true
+            },
+            {
+              "text": " and improved business insights."
+            }
+          ]
+        },
+        "technologies": [
+          "Angular",
+          "Java",
+          "MySQL"
+        ],
+        "responsibilities": [
+          {
+            "segments": [
+              {
+                "text": "Built reusable "
+              },
+              {
+                "text": "Angular UI components",
+                "bold": true
+              },
+              {
+                "text": " for reporting dashboards."
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Optimized "
+              },
+              {
+                "text": "SQL queries",
+                "bold": true
+              },
+              {
+                "text": " to improve report generation performance."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

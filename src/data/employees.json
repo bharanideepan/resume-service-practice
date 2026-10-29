@@ -1,0 +1,375 @@
+{
+  "employees": [
+    {
+      "employee_id": "I2I-1042",
+      "name": "Rajkumar",
+      "designation": "Senior Software Engineer",
+      "total_experience_years": 6.5,
+      "date_of_joining": "2025-10-01",
+      "primary_skills": ["Java", "Python", "SQL", "AWS"],
+      "additional_skills": ["Data Engineering", "ETL", "Data Pipelines"],
+      "certifications": [],
+      "education": [
+        { "qualification": "B.E. Computer Science" }
+      ],
+      "profile_last_updated": "2026-04-15",
+      "data_source": "Mock"
+    },
+    {
+      "employee_id": "I2I-1077",
+      "name": "Arun Kumar",
+      "designation": "Senior Software Engineer",
+      "total_experience_years": 6.5,
+      "date_of_joining": "2021-06-01",
+      "primary_skills": ["React", "Angular", "TypeScript", "Node.js", "Java", "PostgreSQL", "MySQL", "AWS"],
+      "additional_skills": ["MongoDB", "Docker", "CI/CD", "REST APIs"],
+      "certifications": [],
+      "education": [
+        {
+          "qualification": "Bachelor of Engineering",
+          "institution": "Example University",
+          "year": "2019"
+        }
+      ],
+      "contact": {
+        "email": "arun.kumar@example.com",
+        "phone": "+91-9000000000",
+        "location": "Chennai, India",
+        "linkedin": "https://www.linkedin.com/in/example"
+      },
+      "prior_employment": [
+        {
+          "company": "Example Software Pvt Ltd",
+          "role": "Software Engineer",
+          "location": "Chennai, India",
+          "start_date": "2020-04-01",
+          "end_date": "2021-05-31"
+        }
+      ],
+      "profile_last_updated": "2026-09-10",
+      "data_source": "Mock"
+    },
+    {
+      "employee_id": "I2I-1090",
+      "name": "Arun Prakash",
+      "designation": "Software Engineer",
+      "total_experience_years": 3.0,
+      "date_of_joining": "2023-08-01",
+      "primary_skills": ["Python", "Django", "PostgreSQL"],
+      "additional_skills": ["Docker"],
+      "certifications": ["AWS Certified Cloud Practitioner"],
+      "education": [
+        {
+          "qualification": "B.Tech Information Technology",
+          "institution": "Example Institute of Technology",
+          "year": "2023"
+        }
+      ],
+      "contact": {
+        "email": "arun.prakash@example.com",
+        "location": "Bengaluru, India"
+      },
+      "profile_last_updated": "2026-08-01",
+      "data_source": "Mock"
+    },
+    {
+      "employee_id": "I2I-1103",
+      "name": "Meera Nair",
+      "designation": "Associate Software Engineer",
+      "total_experience_years": 0.5,
+      "date_of_joining": "2026-04-15",
+      "primary_skills": ["Java", "SQL"],
+      "additional_skills": [],
+      "certifications": [],
+      "education": [
+        {
+          "qualification": "B.E. Computer Science",
+          "institution": "Example College of Engineering",
+          "year": "2026"
+        }
+      ],
+      "profile_last_updated": "2026-04-15",
+      "data_source": "Mock"
+    },
+    {
+      "employee_id": "I2I-1118",
+      "name": "Priya Raghavan",
+      "designation": "Lead Data Engineer",
+      "total_experience_years": 11.8,
+      "date_of_joining": "2019-02-01",
+      "primary_skills": ["Python", "SQL", "Apache Spark", "Apache Airflow", "Snowflake", "AWS"],
+      "additional_skills": ["Terraform", "Data Modeling", "Team Leadership", "Mentoring"],
+      "certifications": ["AWS Certified Data Analytics - Specialty", "SnowPro Core Certification"],
+      "education": [
+        {
+          "qualification": "M.E. Software Engineering",
+          "institution": "Example Institute of Technology",
+          "year": "2014",
+          "score": "8.7 CGPA"
+        },
+        {
+          "qualification": "B.E. Computer Science",
+          "institution": "Example College of Engineering",
+          "year": "2012",
+          "score": "8.2 CGPA"
+        }
+      ],
+      "contact": {
+        "email": "priya.raghavan@example.com",
+        "phone": "+91-9000000118",
+        "location": "Chennai, India",
+        "linkedin": "https://www.linkedin.com/in/example-priya"
+      },
+      "prior_employment": [
+        {
+          "company": "Example Analytics Pvt Ltd",
+          "role": "Data Engineer",
+          "location": "Bengaluru, India",
+          "start_date": "2015-01-05",
+          "end_date": "2019-01-31"
+        }
+      ],
+      "profile_last_updated": "2026-09-20",
+      "data_source": "Mock"
+    },
+    {
+      "employee_id": "I2I-1131",
+      "name": "Karthik Subramanian",
+      "designation": "Principal Engineer",
+      "total_experience_years": 14.0,
+      "date_of_joining": "2017-03-01",
+      "primary_skills": ["Java", "Spring Boot", "Microservices", "Apache Kafka", "PostgreSQL", "AWS"],
+      "additional_skills": ["System Design", "Technical Leadership"],
+      "certifications": ["AWS Certified Solutions Architect - Associate"],
+      "education": [
+        {
+          "qualification": "B.E. Electronics and Communication",
+          "institution": "Example College of Engineering",
+          "year": "2012"
+        }
+      ],
+      "contact": {
+        "email": "karthik.subramanian@example.com",
+        "location": "Chennai, India"
+      },
+      "prior_employment": [
+        {
+          "company": "Example Systems Ltd",
+          "role": "Software Engineer",
+          "location": "Hyderabad, India",
+          "start_date": "2012-07-02",
+          "end_date": "2017-02-24"
+        }
+      ],
+      "profile_last_updated": "2024-02-12",
+      "data_source": "Mock"
+    }
+  ],
+  "project_assignments": [
+    {
+      "assignment_id": "PA-1001",
+      "employee_id": "I2I-1042",
+      "client": "Roche",
+      "project": "Healthcare Data Platform",
+      "description": "Healthcare data platform for Roche involving backend services and data integration.",
+      "start_date": "2026-05-01",
+      "end_date": null,
+      "status": "Active",
+      "responsibilities": [
+        "Develop and maintain backend services",
+        "Support data integration and processing"
+      ],
+      "verified_technologies": ["Java", "Python", "SQL", "AWS"],
+      "domain": "Healthcare",
+      "achievements": [],
+      "data_source": "Mock"
+    },
+    {
+      "assignment_id": "PA-1002",
+      "employee_id": "I2I-1042",
+      "client": "Internal Ideas2IT",
+      "project": "Data Engineering Enablement",
+      "description": "Internal enablement programme for data engineering skills.",
+      "start_date": "2025-10-01",
+      "end_date": null,
+      "status": "Active",
+      "responsibilities": [
+        "Participate in data engineering learning and implementation activities"
+      ],
+      "verified_technologies": ["Python", "SQL"],
+      "domain": "Data Engineering",
+      "achievements": [],
+      "data_source": "Mock"
+    },
+    {
+      "assignment_id": "PA-2001",
+      "employee_id": "I2I-1077",
+      "client": "Example Client",
+      "project": "Project Alpha",
+      "description": "Modernisation of a legacy healthcare application into modular web components.",
+      "start_date": "2023-03-01",
+      "end_date": null,
+      "status": "Active",
+      "responsibilities": [
+        "Developed accessible reusable components to improve usability and maintainability",
+        "Integrated REST APIs with frontend modules and backend services",
+        "Implemented unit tests and integration tests to improve application reliability"
+      ],
+      "verified_technologies": ["React", "Node.js", "PostgreSQL"],
+      "domain": "Healthcare",
+      "achievements": [],
+      "data_source": "Mock"
+    },
+    {
+      "assignment_id": "PA-2002",
+      "employee_id": "I2I-1077",
+      "client": "Example Retail Client",
+      "project": "Project Beta",
+      "description": "Enhancement of a retail analytics platform for real-time reporting and business insights.",
+      "start_date": "2021-06-01",
+      "end_date": "2023-02-28",
+      "status": "Completed",
+      "responsibilities": [
+        "Built reusable Angular UI components for reporting dashboards",
+        "Optimized SQL queries to improve report generation performance"
+      ],
+      "verified_technologies": ["Angular", "Java", "MySQL"],
+      "domain": "Retail",
+      "achievements": [],
+      "data_source": "Mock"
+    },
+    {
+      "assignment_id": "PA-3001",
+      "employee_id": "I2I-1090",
+      "client": "Example Logistics Client",
+      "project": "Shipment Tracking Portal",
+      "description": "Web portal for shipment tracking and status notifications.",
+      "start_date": "2024-01-15",
+      "end_date": null,
+      "status": "Active",
+      "responsibilities": [
+        "Developed Django REST endpoints for shipment tracking",
+        "Wrote database migrations and queries for PostgreSQL"
+      ],
+      "verified_technologies": ["Python", "Django", "PostgreSQL", "Docker"],
+      "domain": "Logistics",
+      "achievements": [],
+      "data_source": "Mock"
+    },
+    {
+      "assignment_id": "PA-4001",
+      "employee_id": "I2I-1118",
+      "client": "Medisphere Pharma",
+      "project": "Clinical Trials Data Lake",
+      "description": "Cloud data lake consolidating clinical trial data from multiple study systems for analytics and regulatory submissions.",
+      "start_date": "2019-06-03",
+      "end_date": "2021-09-30",
+      "status": "Completed",
+      "responsibilities": [
+        "Built batch ingestion pipelines in Python and Apache Spark for clinical study data",
+        "Designed the S3 and Redshift data model for trial datasets",
+        "Implemented data quality checks on incoming study files"
+      ],
+      "verified_technologies": ["Python", "Apache Spark", "AWS", "Amazon Redshift", "SQL"],
+      "domain": "Life Sciences",
+      "achievements": [
+        "Reduced nightly batch processing time from 6 hours to 2 hours"
+      ],
+      "data_source": "Mock"
+    },
+    {
+      "assignment_id": "PA-4002",
+      "employee_id": "I2I-1118",
+      "client": "FinEdge Bank",
+      "project": "Regulatory Reporting Pipeline",
+      "description": "Orchestrated data pipelines producing regulatory reports for a retail bank.",
+      "start_date": "2021-10-01",
+      "end_date": "2023-12-29",
+      "status": "Completed",
+      "responsibilities": [
+        "Orchestrated reporting workflows with Apache Airflow",
+        "Built transformation layers in Snowflake and Apache Spark",
+        "Led a team of 4 engineers and reviewed their code"
+      ],
+      "verified_technologies": ["Python", "SQL", "Apache Spark", "Apache Airflow", "Snowflake"],
+      "domain": "Banking",
+      "achievements": [],
+      "data_source": "Mock"
+    },
+    {
+      "assignment_id": "PA-4003",
+      "employee_id": "I2I-1118",
+      "client": "Roche",
+      "project": "Healthcare Data Platform",
+      "description": "Healthcare data platform for Roche involving backend services and data integration.",
+      "start_date": "2024-01-08",
+      "end_date": null,
+      "status": "Active",
+      "responsibilities": [
+        "Lead data engineering for the platform and manage a team of 5 engineers",
+        "Design batch ingestion pipelines with Apache Airflow and Apache Spark",
+        "Provision AWS infrastructure using Terraform"
+      ],
+      "verified_technologies": ["Python", "SQL", "Apache Spark", "Apache Airflow", "Snowflake", "AWS", "Terraform"],
+      "domain": "Healthcare",
+      "achievements": [],
+      "data_source": "Mock"
+    },
+    {
+      "assignment_id": "PA-4004",
+      "employee_id": "I2I-1118",
+      "client": "Internal Ideas2IT",
+      "project": "Data Engineering Guild",
+      "description": "Internal community of practice for data engineering at Ideas2IT.",
+      "start_date": "2022-03-01",
+      "end_date": null,
+      "status": "Active",
+      "responsibilities": [
+        "Mentor engineers on data pipeline design",
+        "Run monthly internal knowledge-sharing sessions"
+      ],
+      "verified_technologies": ["Python", "Apache Spark"],
+      "domain": "Data Engineering",
+      "achievements": [],
+      "data_source": "Mock"
+    },
+    {
+      "assignment_id": "PA-5001",
+      "employee_id": "I2I-1131",
+      "client": "PayWave",
+      "project": "Payments Orchestration Platform",
+      "description": "Event-driven payments platform replacing a monolithic payment processing system.",
+      "start_date": "2020-01-06",
+      "end_date": "2024-05-31",
+      "status": "Completed",
+      "responsibilities": [
+        "Designed the event-driven architecture using Apache Kafka",
+        "Led the migration of a monolith into 12 Spring Boot microservices",
+        "Reviewed designs and mentored a team of 8 engineers"
+      ],
+      "verified_technologies": ["Java", "Spring Boot", "Apache Kafka", "PostgreSQL", "AWS"],
+      "domain": "Fintech",
+      "achievements": [],
+      "data_source": "Mock"
+    },
+    {
+      "assignment_id": "PA-5002",
+      "employee_id": "I2I-1131",
+      "client": "PayWave",
+      "project": "Fraud Detection Services",
+      "description": "Real-time fraud detection services for card payments.",
+      "start_date": "2024-06-03",
+      "end_date": null,
+      "status": "Active",
+      "responsibilities": [
+        "Architect low-latency fraud scoring services",
+        "Introduce Kubernetes-based deployment for the services",
+        "Define service-level objectives with the client's platform team"
+      ],
+      "verified_technologies": ["Java", "Spring Boot", "Apache Kafka", "Redis", "Kubernetes", "Terraform", "AWS"],
+      "domain": "Fintech",
+      "achievements": [],
+      "data_source": "Mock"
+    }
+  ]
+}

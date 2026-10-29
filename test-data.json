@@ -1,0 +1,132 @@
+
+{
+    "candidate": {
+      "name": "Arun Kumar",
+      "designation": "Senior Software Engineer",
+      "total_experience": "6+ years of experience",
+      "overview": "Full-stack engineer building reliable web applications.",
+      "email": "arun@example.com",
+      "phone": "+91-9000000000",
+      "contact": "Chennai, India",
+      "location": "Chennai, India",
+      "linkedin": "https://www.linkedin.com/in/example"
+    },
+    "resumeContent": {
+      "summary": {
+        "segments": [
+          {
+            "text": "Full-stack engineer experienced in "
+          },
+          {
+            "text": "building reliable web applications",
+            "bold": true
+          },
+          {
+            "text": " and APIs."
+          }
+        ]
+      },
+      "skills": [
+        {
+          "category": "Frontend",
+          "items": ["React", "Angular", "TypeScript"]
+        },
+        {
+          "category": "Backend",
+          "items": ["Node.js", "Java", "REST APIs"]
+        }
+      ],
+      "highlights": [
+        {
+          "segments": [
+            {
+              "text": "Experienced in "
+            },
+            {
+              "text": "building scalable applications",
+              "bold": true
+            },
+            {
+              "text": " using modern technologies."
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "text": "Improved quality through "
+            },
+            {
+              "text": "automated testing",
+              "bold": true
+            },
+            {
+              "text": " and code reviews."
+            }
+          ]
+        }
+      ],
+      "experience": [],
+      "education": [
+        {
+          "qualification": "Bachelor of Engineering",
+          "institution": "Example University",
+          "year": "2019",
+          "score": ""
+        }
+      ],
+      "projects": [
+        {
+          "name": "Project Alpha",
+          "client": "Example Client",
+          "domain": "Healthcare",
+          "summary": {
+            "segments": [
+              {
+                "text": "Modernized a legacy system into "
+              },
+              {
+                "text": "modular web components",
+                "bold": true
+              },
+              {
+                "text": " using React and Node.js."
+              }
+            ]
+          },
+          "technologies": ["React", "Node.js", "PostgreSQL"],
+          "responsibilities": [
+            {
+              "segments": [
+                {
+                  "text": "Developed "
+                },
+                {
+                  "text": "reusable UI components",
+                  "bold": true
+                },
+                {
+                  "text": " for the application."
+                }
+              ]
+            },
+            {
+              "segments": [
+                {
+                  "text": "Integrated APIs and added "
+                },
+                {
+                  "text": "unit tests",
+                  "bold": true
+                },
+                {
+                  "text": " to improve reliability."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

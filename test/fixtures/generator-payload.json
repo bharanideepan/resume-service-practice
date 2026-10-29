@@ -1,0 +1,262 @@
+{
+  "candidate": {
+    "name": "Rajkumar",
+    "designation": "Senior Software Engineer",
+    "total_experience": "6.5+ years of experience",
+    "overview": "Senior Software Engineer with Python, SQL and AWS experience, currently supporting data integration on a healthcare data platform."
+  },
+  "resumeContent": {
+    "summary": {
+      "segments": [
+        {
+          "text": "Senior Software Engineer currently working on a "
+        },
+        {
+          "text": "healthcare data platform",
+          "bold": true
+        },
+        {
+          "text": " for Roche, developing backend services and supporting "
+        },
+        {
+          "text": "data integration and processing",
+          "bold": true
+        },
+        {
+          "text": ". Works with "
+        },
+        {
+          "text": "Python and SQL",
+          "bold": true
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "AWS",
+          "bold": true
+        },
+        {
+          "text": ", and is building data engineering skills through an internal enablement programme."
+        }
+      ]
+    },
+    "skills": [
+      {
+        "category": "Languages",
+        "items": [
+          "Python",
+          "SQL",
+          "Java"
+        ]
+      },
+      {
+        "category": "Cloud",
+        "items": [
+          "AWS"
+        ]
+      },
+      {
+        "category": "Additional exposure",
+        "items": [
+          "Data Engineering",
+          "ETL",
+          "Data Pipelines"
+        ]
+      }
+    ],
+    "highlights": [
+      {
+        "segments": [
+          {
+            "text": "Currently develops and maintains "
+          },
+          {
+            "text": "backend services",
+            "bold": true
+          },
+          {
+            "text": " on a healthcare data platform for Roche."
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Supports "
+          },
+          {
+            "text": "data integration and processing",
+            "bold": true
+          },
+          {
+            "text": " on a client healthcare project."
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Applies "
+          },
+          {
+            "text": "Python and SQL",
+            "bold": true
+          },
+          {
+            "text": " across client and internal data engineering assignments."
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Participates in "
+          },
+          {
+            "text": "data engineering",
+            "bold": true
+          },
+          {
+            "text": " learning and implementation activities in an internal programme."
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "role": "Senior Software Engineer",
+        "company": "Ideas2IT",
+        "startDate": "Oct 2025",
+        "endDate": "Present",
+        "bullets": [
+          {
+            "segments": [
+              {
+                "text": "Develops and maintains backend services and supports data integration for a healthcare client."
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Takes part in internal "
+              },
+              {
+                "text": "data engineering",
+                "bold": true
+              },
+              {
+                "text": " learning and implementation activities."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "education": [
+      {
+        "qualification": "B.E. Computer Science",
+        "institution": "",
+        "year": "",
+        "score": ""
+      }
+    ],
+    "projects": [
+      {
+        "name": "Healthcare Data Platform",
+        "client": "Roche",
+        "domain": "Healthcare",
+        "summary": {
+          "segments": [
+            {
+              "text": "Healthcare data platform for Roche involving backend services and "
+            },
+            {
+              "text": "data integration",
+              "bold": true
+            },
+            {
+              "text": ". May 2026 - Present."
+            }
+          ]
+        },
+        "technologies": [
+          "Java",
+          "Python",
+          "SQL",
+          "AWS"
+        ],
+        "responsibilities": [
+          {
+            "segments": [
+              {
+                "text": "Develop and maintain "
+              },
+              {
+                "text": "backend services",
+                "bold": true
+              },
+              {
+                "text": "."
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Support "
+              },
+              {
+                "text": "data integration and processing",
+                "bold": true
+              },
+              {
+                "text": "."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Data Engineering Enablement",
+        "client": "Ideas2IT (Internal)",
+        "domain": "Data Engineering",
+        "summary": {
+          "segments": [
+            {
+              "text": "Internal enablement programme for "
+            },
+            {
+              "text": "data engineering",
+              "bold": true
+            },
+            {
+              "text": " skills. Oct 2025 - Present."
+            }
+          ]
+        },
+        "technologies": [
+          "Python",
+          "SQL"
+        ],
+        "responsibilities": [
+          {
+            "segments": [
+              {
+                "text": "Participate in "
+              },
+              {
+                "text": "data engineering",
+                "bold": true
+              },
+              {
+                "text": " learning and implementation activities."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
