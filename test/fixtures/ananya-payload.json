@@ -1,0 +1,684 @@
+{
+  "candidate": {
+    "name": "Ananya Krishnan",
+    "designation": "Senior Data Engineer",
+    "total_experience": "10+ years of experience",
+    "overview": "Lead data engineer with healthcare and life-sciences delivery experience across Spark, Airflow, Snowflake and AWS.",
+    "email": "ananya.krishnan@example.com",
+    "phone": "+91-9000001150",
+    "location": "Chennai, India",
+    "linkedin": "https://www.linkedin.com/in/example-ananya"
+  },
+  "resumeContent": {
+    "summary": {
+      "segments": [
+        {
+          "text": "Lead data engineer with ",
+          "bold": false
+        },
+        {
+          "text": "Python, SQL and Spark",
+          "bold": true
+        },
+        {
+          "text": ", currently leading a 5-engineer ",
+          "bold": false
+        },
+        {
+          "text": "healthcare data platform",
+          "bold": true
+        },
+        {
+          "text": " team for Roche.",
+          "bold": false
+        }
+      ]
+    },
+    "skills": [
+      {
+        "category": "Languages",
+        "items": [
+          "Python",
+          "SQL",
+          "Scala"
+        ]
+      },
+      {
+        "category": "Cloud and DevOps",
+        "items": [
+          "AWS",
+          "Terraform",
+          "Docker"
+        ]
+      },
+      {
+        "category": "Data Processing",
+        "items": [
+          "Apache Spark",
+          "Apache Airflow",
+          "Apache Kafka",
+          "dbt"
+        ]
+      },
+      {
+        "category": "Data Stores",
+        "items": [
+          "Snowflake",
+          "Amazon Redshift",
+          "PostgreSQL"
+        ]
+      }
+    ],
+    "highlights": [
+      {
+        "segments": [
+          {
+            "text": "Leads ",
+            "bold": false
+          },
+          {
+            "text": "data engineering",
+            "bold": true
+          },
+          {
+            "text": " for the Roche healthcare platform and manages a team of 5 engineers.",
+            "bold": false
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Builds ",
+            "bold": false
+          },
+          {
+            "text": "batch and streaming pipelines",
+            "bold": true
+          },
+          {
+            "text": " with Apache Airflow, Spark and Kafka on AWS.",
+            "bold": false
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Delivered a ",
+            "bold": false
+          },
+          {
+            "text": "life-sciences data lake",
+            "bold": true
+          },
+          {
+            "text": " that cut nightly batch time from 6 hours to 2 hours.",
+            "bold": false
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Models curated datasets in ",
+            "bold": false
+          },
+          {
+            "text": "Snowflake",
+            "bold": true
+          },
+          {
+            "text": " with dbt, tests and CI/CD for regulated reporting.",
+            "bold": false
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Applies ",
+            "bold": false
+          },
+          {
+            "text": "HIPAA-aligned",
+            "bold": true
+          },
+          {
+            "text": " access controls and de-identification to patient data.",
+            "bold": false
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Mentors engineers through the internal ",
+            "bold": false
+          },
+          {
+            "text": "Data Engineering Guild",
+            "bold": true
+          },
+          {
+            "text": " and code reviews.",
+            "bold": false
+          }
+        ]
+      },
+      {
+        "segments": [
+          {
+            "text": "Provisions AWS infrastructure as code with ",
+            "bold": false
+          },
+          {
+            "text": "Terraform",
+            "bold": true
+          },
+          {
+            "text": " across projects.",
+            "bold": false
+          }
+        ]
+      }
+    ],
+    "experience": [],
+    "education": [
+      {
+        "qualification": "M.Tech Data Science",
+        "institution": "Example Institute of Technology",
+        "year": "2016",
+        "score": "8.9 CGPA"
+      },
+      {
+        "qualification": "B.E. Computer Science",
+        "institution": "Example College of Engineering",
+        "year": "2014",
+        "score": "8.4 CGPA"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Healthcare Data Platform",
+        "client": "Roche",
+        "domain": "Healthcare",
+        "summary": {
+          "segments": [
+            {
+              "text": "Healthcare data platform for Roche that integrates clinical, claims and device data for downstream analytics teams. It combines batch and streaming ingestion on AWS and Snowflake. Jan 2024 - Present.",
+              "bold": false
+            }
+          ]
+        },
+        "technologies": [
+          "Python",
+          "SQL",
+          "Apache Spark",
+          "Apache Airflow",
+          "Apache Kafka",
+          "Snowflake",
+          "AWS",
+          "Terraform"
+        ],
+        "responsibilities": [
+          {
+            "segments": [
+              {
+                "text": "Lead ",
+                "bold": false
+              },
+              {
+                "text": "data engineering",
+                "bold": true
+              },
+              {
+                "text": " for the platform and manage a team of 5 engineers.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Design ",
+                "bold": false
+              },
+              {
+                "text": "batch ingestion pipelines",
+                "bold": true
+              },
+              {
+                "text": " with Apache Airflow and Apache Spark on AWS.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Build ",
+                "bold": false
+              },
+              {
+                "text": "streaming ingestion",
+                "bold": true
+              },
+              {
+                "text": " of device events using Apache Kafka.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Model curated healthcare datasets in ",
+                "bold": false
+              },
+              {
+                "text": "Snowflake",
+                "bold": true
+              },
+              {
+                "text": " for analytics and reporting.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Provision and version AWS infrastructure using ",
+                "bold": false
+              },
+              {
+                "text": "Terraform",
+                "bold": true
+              },
+              {
+                "text": ".",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Define ",
+                "bold": false
+              },
+              {
+                "text": "data quality rules",
+                "bold": true
+              },
+              {
+                "text": " and monitoring so downstream teams can trust the data.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Review pull requests and mentor engineers on pipeline design and testing.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Present delivery status and technical trade-offs to client stakeholders.",
+                "bold": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Regulatory Reporting Pipeline",
+        "client": "FinEdge Bank",
+        "domain": "Banking",
+        "summary": {
+          "segments": [
+            {
+              "text": "Data pipelines that produce daily and monthly regulatory reports for a retail bank. Reporting logic moved from legacy stored procedures into tested, version-controlled transformation layers. Feb 2022 - Dec 2023.",
+              "bold": false
+            }
+          ]
+        },
+        "technologies": [
+          "Python",
+          "SQL",
+          "Apache Spark",
+          "Apache Airflow",
+          "Snowflake",
+          "dbt",
+          "Docker",
+          "PostgreSQL"
+        ],
+        "responsibilities": [
+          {
+            "segments": [
+              {
+                "text": "Designed transformation layers in ",
+                "bold": false
+              },
+              {
+                "text": "Snowflake",
+                "bold": true
+              },
+              {
+                "text": " using dbt models with automated tests and documentation.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Built ",
+                "bold": false
+              },
+              {
+                "text": "Apache Spark",
+                "bold": true
+              },
+              {
+                "text": " jobs to process high-volume transaction and ledger data.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Orchestrated reporting workflows with ",
+                "bold": false
+              },
+              {
+                "text": "Apache Airflow",
+                "bold": true
+              },
+              {
+                "text": ", including SLA monitoring and failure alerts.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Migrated legacy SQL stored procedures into modular, version-controlled dbt models.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Containerised dbt and Airflow jobs with ",
+                "bold": false
+              },
+              {
+                "text": "Docker",
+                "bold": true
+              },
+              {
+                "text": " and set up CI/CD so changes were tested before release.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Reconciled report totals against source ledgers in PostgreSQL to support audit reviews.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Led a team of 4 engineers and reviewed their code and designs.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Worked with compliance analysts to translate reporting rules into pipeline logic.",
+                "bold": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Clinical Trials Data Lake",
+        "client": "Medisphere Pharma",
+        "domain": "Life Sciences",
+        "summary": {
+          "segments": [
+            {
+              "text": "Cloud data lake that consolidates clinical trial data from more than 15 study systems into one governed platform for analytics and regulatory submissions. It replaced manual spreadsheet reporting with automated, auditable pipelines. Mar 2020 - Jan 2022.",
+              "bold": false
+            }
+          ]
+        },
+        "technologies": [
+          "Python",
+          "Scala",
+          "SQL",
+          "Apache Spark",
+          "Apache Airflow",
+          "AWS",
+          "Amazon Redshift",
+          "Terraform"
+        ],
+        "responsibilities": [
+          {
+            "segments": [
+              {
+                "text": "Built batch ingestion pipelines in ",
+                "bold": false
+              },
+              {
+                "text": "Python and Scala",
+                "bold": true
+              },
+              {
+                "text": " on Apache Spark for data from more than 15 source systems.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Designed the S3 and ",
+                "bold": false
+              },
+              {
+                "text": "Amazon Redshift",
+                "bold": true
+              },
+              {
+                "text": " data model for trial, patient and site datasets.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Orchestrated daily and weekly loads with ",
+                "bold": false
+              },
+              {
+                "text": "Apache Airflow",
+                "bold": true
+              },
+              {
+                "text": ", including dependency handling and retries.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Implemented data quality checks for completeness, duplicates and referential integrity.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Applied ",
+                "bold": false
+              },
+              {
+                "text": "HIPAA-aligned",
+                "bold": true
+              },
+              {
+                "text": " access controls and de-identification of patient data.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Optimised Spark jobs and Redshift queries to cut nightly processing time.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Reduced nightly batch processing time from ",
+                "bold": false
+              },
+              {
+                "text": "6 hours to 2 hours",
+                "bold": true
+              },
+              {
+                "text": ".",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Provisioned the AWS infrastructure for the lake with Terraform.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Documented data lineage and handed over runbooks to the support team.",
+                "bold": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Data Engineering Guild",
+        "client": "Ideas2IT (Internal)",
+        "domain": "Data Engineering",
+        "summary": {
+          "segments": [
+            {
+              "text": "Internal community of practice that sets data engineering standards and shares best practices across Ideas2IT delivery teams. It runs regular sessions and maintains reusable pipeline templates. Jun 2022 - Present.",
+              "bold": false
+            }
+          ]
+        },
+        "technologies": [
+          "Python",
+          "Apache Spark",
+          "Apache Airflow",
+          "dbt"
+        ],
+        "responsibilities": [
+          {
+            "segments": [
+              {
+                "text": "Mentor engineers on data pipeline design, testing and review.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Run monthly internal knowledge-sharing sessions on Spark, Airflow and Snowflake.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Maintain reusable ",
+                "bold": false
+              },
+              {
+                "text": "Airflow and dbt",
+                "bold": true
+              },
+              {
+                "text": " project templates for new engagements.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Define data quality and code review checklists for data projects.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Review architecture proposals from other delivery teams.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Onboard new data engineers with a structured learning path.",
+                "bold": false
+              }
+            ]
+          },
+          {
+            "segments": [
+              {
+                "text": "Collect lessons learned from client projects into internal guidelines.",
+                "bold": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

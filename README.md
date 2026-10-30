@@ -138,3 +138,12 @@ npm test
 ```
 
 Covers the employee endpoints, `/generate-resume` (structured content in, valid `.docx` out, bold segments, escaping, empty and long content, validation errors, API key), and `/resumes` plus `/downloads` (link works, matches `/generate-resume`, expiry, eviction, 404s).
+
+## 10. Page 1 layout rules
+
+To keep page 1 (skills, education and "Professional summary and Key highlights") on one page, the generator:
+- prints `resumeContent.summary` as the **first bullet** and then each `highlights` item, as a bullet list only (aim for 8 bullets or fewer);
+- **ignores `resumeContent.experience`**. The field is still accepted so existing callers do not break, but nothing is printed under the highlights;
+- removes the empty paragraphs that the template's loop tags leave between bullets.
+
+Project pages are unchanged and start on a new page under PROJECT DETAILS. `test/fixtures/ananya-payload.json` is a full demo payload (4 projects, 7 to 9 bullets each).

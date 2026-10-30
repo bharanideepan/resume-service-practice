@@ -72,14 +72,17 @@ test('structured content: every section lands in the document and bold segments 
   for (const expected of [
     'Test Person', 'Staff Engineer (9+ years of experience)', 'Overview line.', 'tp@example.com', '+91-1', 'Pune, India', 'https://linkedin.com/in/tp',
     'Backend:', 'Java, Kafka', 'Builds distributed systems at scale.', 'Led platform migration work.',
-    'Ideas2IT', 'Chennai', 'Jan 2020 - Present', 'Owned service reliability.',
     'B.E., Example Univ (2012) - 8.1 CGPA',
     'Proj X', 'Client: ClientCo', 'Domain: Fintech', 'Replaced a monolith.', 'Technologies: Java, Kafka', 'Designed event streams.'
   ]) {
     assert.ok(text.includes(expected), `missing "${expected}"`);
   }
-  for (const phrase of ['distributed systems', 'platform migration', 'service reliability', 'monolith', 'event streams']) {
+  for (const phrase of ['distributed systems', 'platform migration', 'monolith', 'event streams']) {
     assert.ok(bold.includes(phrase), `"${phrase}" should be a bold run`);
+  }
+  // Employer-level experience is accepted but intentionally not rendered (keeps page 1 to one page).
+  for (const hidden of ['Jan 2020 - Present', 'Owned service reliability.', 'Chennai']) {
+    assert.ok(!text.includes(hidden), `experience content "${hidden}" must not be rendered`);
   }
   // Non-bold neighbours stay non-bold.
   assert.ok(!bold.some(b => b.includes('Builds ') || b.includes('Led ')), 'plain text must not be bold');
@@ -177,4 +180,90 @@ test('API key: with API_KEY set, requests without the bearer token get 401 and w
   } finally {
     child.kill();
   }
+});
+
+/** Paragraphs of the right-hand cell of the main table ("Professional summary and Key highlights"). */
+function rightCellParagraphs(buffer) {
+  const xml = new PizZip(buffer).file('word/document.xml').asText();
+  const main = xml.match(/<w:tbl>[\s\S]*?<\/w:tbl>/g).find(t => t.includes('Professional summary and Key highlights'));
+  const cell = main.match(/<w:tc>[\s\S]*?<\/w:tc>/g)[1];
+  return cell.match(/<w:p[ >](?:(?!<w:p[ >])[\s\S])*?<\/w:p>/g).map(p => ({
+    text: [...p.matchAll(/<w:t[^>]*>([^<]*)<\/w:t>/g)].map(m => m[1]).join(''),
+    bullet: /<w:numPr>/.test(p)
+  }));
+}
+
+test('page 1 right column: bullets only (summary folded in as the first bullet), with no experience and no blank lines between bullets', async () => {
+  const payload = clone(sample);
+  payload.resumeContent.summary = rt('SUMMARY LINE');
+  payload.resumeContent.highlights = Array.from({ length: 8 }, (_, i) => rt(`Highlight bullet ${i + 1}.`));
+  payload.resumeContent.experience = [{ role: 'EXPERIENCE_ROLE', company: 'EXPERIENCE_CO', startDate: '2020', endDate: 'Present', bullets: [rt('EXPERIENCE_BULLET')] }];
+  const res = await post(payload);
+  assert.equal(res.status, 200);
+  const paras = rightCellParagraphs(Buffer.from(await res.arrayBuffer()));
+
+  const texts = paras.map(p => p.text).join('\n');
+  assert.ok(!texts.includes('EXPERIENCE_ROLE') && !texts.includes('EXPERIENCE_BULLET'), 'experience must be ignored');
+
+  const bullets = paras.filter(p => p.bullet);
+  // The summary is folded in as the first bullet, followed by the 8 highlights.
+  assert.equal(bullets.length, 9);
+  assert.deepEqual(bullets.map(b => b.text), ['SUMMARY LINE', ...Array.from({ length: 8 }, (_, i) => `Highlight bullet ${i + 1}.`)]);
+
+  // Between the summary and the last bullet there must be nothing but the bullets themselves.
+  const first = paras.findIndex(p => p.bullet);
+  const last = paras.map(p => p.bullet).lastIndexOf(true);
+  assert.ok(paras.slice(first, last + 1).every(p => p.bullet), 'blank paragraphs left between bullets');
+  // Nothing but the section headings may come before the first bullet: no summary paragraph, no blank line.
+  assert.deepEqual(paras.slice(0, first).map(p => p.text.trim()).filter(Boolean), ['EXPERIENCE', 'Professional summary and Key highlights']);
+  assert.ok(paras.slice(0, first).every(p => !p.bullet));
+  assert.equal(paras[first - 1].text, ' Professional summary and Key highlights');
+  // Only the cell's mandatory trailing paragraph may follow the last bullet.
+  assert.ok(paras.length - 1 - last <= 1, 'extra empty paragraphs after the bullets');
+});
+
+test('project details keep their blank-free bullet lists and the PROJECT DETAILS page break', async () => {
+  const payload = clone(sample);
+  payload.resumeContent.projects = [{ name: 'P1', client: 'C', domain: 'D', summary: rt('Desc.'), technologies: ['A'], responsibilities: Array.from({ length: 7 }, (_, i) => rt(`Resp ${i + 1}.`)) }];
+  const res = await post(payload);
+  const { text, xml } = inspect(Buffer.from(await res.arrayBuffer()));
+  for (let i = 1; i <= 7; i += 1) assert.ok(text.includes(`Resp ${i}.`));
+  assert.match(xml, /<w:pageBreakBefore\/>[\s\S]{0,1500}PROJECT DETAILS/);
+});
+
+test('an empty summary adds no bullet and no blank paragraph', async () => {
+  const payload = clone(sample);
+  payload.resumeContent.summary = rt('   ');
+  payload.resumeContent.highlights = [rt('Only highlight.')];
+  const paras = rightCellParagraphs(Buffer.from(await (await post(payload)).arrayBuffer()));
+  assert.deepEqual(paras.filter(p => p.bullet).map(p => p.text), ['Only highlight.']);
+  const first = paras.findIndex(p => p.bullet);
+  assert.equal(paras[first - 1].text, ' Professional summary and Key highlights');
+});
+
+test('demo payload (Ananya): 8 page-1 bullets, 4 projects with 7+ bullets, no experience section', async () => {
+  const demo = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures', 'ananya-payload.json'), 'utf8'));
+  const res = await post(demo);
+  assert.equal(res.status, 200);
+  assert.equal(res.headers.get('content-disposition'), 'attachment; filename="ananya-krishnan-resume.docx"');
+  const buf = Buffer.from(await res.arrayBuffer());
+  const paras = rightCellParagraphs(buf);
+  assert.equal(paras.filter(p => p.bullet).length, 8, 'summary + 7 highlights');
+  const { text, xml } = inspect(buf);
+  for (const project of ['Healthcare Data Platform', 'Regulatory Reporting Pipeline', 'Clinical Trials Data Lake', 'Data Engineering Guild']) {
+    assert.ok(text.includes(project), `missing project ${project}`);
+  }
+  // Count bullets per project from the PROJECT DETAILS part of the document.
+  const details = xml.slice(xml.indexOf('PROJECT DETAILS'));
+  const projectParas = details.match(/<w:p[ >](?:(?!<w:p[ >])[\s\S])*?<\/w:p>/g).map(p => ({
+    t: [...p.matchAll(/<w:t[^>]*>([^<]*)<\/w:t>/g)].map(m => m[1]).join(''), b: /<w:numPr>/.test(p)
+  }));
+  const counts = []; let n = -1;
+  for (const p of projectParas) {
+    if (/^Client: /.test(p.t)) { counts.push(0); n += 1; } else if (p.b && n >= 0) counts[n] += 1;
+  }
+  assert.equal(counts.length, 4);
+  assert.ok(counts.every(c => c >= 7), `each project needs 7+ bullets, got ${counts}`);
+  assert.ok(!/Ideas2IT\s*\|/.test(text), 'no employer-level experience entry');
+  assert.ok(!text.includes('Terraform .'), 'no stray space before punctuation');
 });

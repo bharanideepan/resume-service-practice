@@ -6,11 +6,22 @@
       "designation": "Senior Software Engineer",
       "total_experience_years": 6.5,
       "date_of_joining": "2025-10-01",
-      "primary_skills": ["Java", "Python", "SQL", "AWS"],
-      "additional_skills": ["Data Engineering", "ETL", "Data Pipelines"],
+      "primary_skills": [
+        "Java",
+        "Python",
+        "SQL",
+        "AWS"
+      ],
+      "additional_skills": [
+        "Data Engineering",
+        "ETL",
+        "Data Pipelines"
+      ],
       "certifications": [],
       "education": [
-        { "qualification": "B.E. Computer Science" }
+        {
+          "qualification": "B.E. Computer Science"
+        }
       ],
       "profile_last_updated": "2026-04-15",
       "data_source": "Mock"
@@ -21,8 +32,22 @@
       "designation": "Senior Software Engineer",
       "total_experience_years": 6.5,
       "date_of_joining": "2021-06-01",
-      "primary_skills": ["React", "Angular", "TypeScript", "Node.js", "Java", "PostgreSQL", "MySQL", "AWS"],
-      "additional_skills": ["MongoDB", "Docker", "CI/CD", "REST APIs"],
+      "primary_skills": [
+        "React",
+        "Angular",
+        "TypeScript",
+        "Node.js",
+        "Java",
+        "PostgreSQL",
+        "MySQL",
+        "AWS"
+      ],
+      "additional_skills": [
+        "MongoDB",
+        "Docker",
+        "CI/CD",
+        "REST APIs"
+      ],
       "certifications": [],
       "education": [
         {
@@ -55,9 +80,17 @@
       "designation": "Software Engineer",
       "total_experience_years": 3.0,
       "date_of_joining": "2023-08-01",
-      "primary_skills": ["Python", "Django", "PostgreSQL"],
-      "additional_skills": ["Docker"],
-      "certifications": ["AWS Certified Cloud Practitioner"],
+      "primary_skills": [
+        "Python",
+        "Django",
+        "PostgreSQL"
+      ],
+      "additional_skills": [
+        "Docker"
+      ],
+      "certifications": [
+        "AWS Certified Cloud Practitioner"
+      ],
       "education": [
         {
           "qualification": "B.Tech Information Technology",
@@ -78,7 +111,10 @@
       "designation": "Associate Software Engineer",
       "total_experience_years": 0.5,
       "date_of_joining": "2026-04-15",
-      "primary_skills": ["Java", "SQL"],
+      "primary_skills": [
+        "Java",
+        "SQL"
+      ],
       "additional_skills": [],
       "certifications": [],
       "education": [
@@ -97,9 +133,24 @@
       "designation": "Lead Data Engineer",
       "total_experience_years": 11.8,
       "date_of_joining": "2019-02-01",
-      "primary_skills": ["Python", "SQL", "Apache Spark", "Apache Airflow", "Snowflake", "AWS"],
-      "additional_skills": ["Terraform", "Data Modeling", "Team Leadership", "Mentoring"],
-      "certifications": ["AWS Certified Data Analytics - Specialty", "SnowPro Core Certification"],
+      "primary_skills": [
+        "Python",
+        "SQL",
+        "Apache Spark",
+        "Apache Airflow",
+        "Snowflake",
+        "AWS"
+      ],
+      "additional_skills": [
+        "Terraform",
+        "Data Modeling",
+        "Team Leadership",
+        "Mentoring"
+      ],
+      "certifications": [
+        "AWS Certified Data Analytics - Specialty",
+        "SnowPro Core Certification"
+      ],
       "education": [
         {
           "qualification": "M.E. Software Engineering",
@@ -138,9 +189,21 @@
       "designation": "Principal Engineer",
       "total_experience_years": 14.0,
       "date_of_joining": "2017-03-01",
-      "primary_skills": ["Java", "Spring Boot", "Microservices", "Apache Kafka", "PostgreSQL", "AWS"],
-      "additional_skills": ["System Design", "Technical Leadership"],
-      "certifications": ["AWS Certified Solutions Architect - Associate"],
+      "primary_skills": [
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "Apache Kafka",
+        "PostgreSQL",
+        "AWS"
+      ],
+      "additional_skills": [
+        "System Design",
+        "Technical Leadership"
+      ],
+      "certifications": [
+        "AWS Certified Solutions Architect - Associate"
+      ],
       "education": [
         {
           "qualification": "B.E. Electronics and Communication",
@@ -163,6 +226,69 @@
       ],
       "profile_last_updated": "2024-02-12",
       "data_source": "Mock"
+    },
+    {
+      "employee_id": "I2I-1150",
+      "name": "Ananya Krishnan",
+      "designation": "Senior Data Engineer",
+      "total_experience_years": 10.3,
+      "date_of_joining": "2020-02-03",
+      "primary_skills": [
+        "Python",
+        "SQL",
+        "Scala",
+        "AWS",
+        "Terraform",
+        "Docker",
+        "Apache Spark",
+        "Apache Airflow",
+        "Apache Kafka",
+        "dbt",
+        "Snowflake",
+        "Amazon Redshift",
+        "PostgreSQL"
+      ],
+      "additional_skills": [
+        "Data Modeling",
+        "HIPAA Compliance",
+        "Data Quality Frameworks",
+        "Mentoring"
+      ],
+      "certifications": [
+        "AWS Certified Data Analytics - Specialty",
+        "SnowPro Core Certification"
+      ],
+      "education": [
+        {
+          "qualification": "M.Tech Data Science",
+          "institution": "Example Institute of Technology",
+          "year": "2016",
+          "score": "8.9 CGPA"
+        },
+        {
+          "qualification": "B.E. Computer Science",
+          "institution": "Example College of Engineering",
+          "year": "2014",
+          "score": "8.4 CGPA"
+        }
+      ],
+      "contact": {
+        "email": "ananya.krishnan@example.com",
+        "phone": "+91-9000001150",
+        "location": "Chennai, India",
+        "linkedin": "https://www.linkedin.com/in/example-ananya"
+      },
+      "prior_employment": [
+        {
+          "company": "Example Analytics Pvt Ltd",
+          "role": "Data Engineer",
+          "location": "Bengaluru, India",
+          "start_date": "2016-07-04",
+          "end_date": "2020-01-31"
+        }
+      ],
+      "profile_last_updated": "2026-09-15",
+      "data_source": "Mock"
     }
   ],
   "project_assignments": [
@@ -179,7 +305,12 @@
         "Develop and maintain backend services",
         "Support data integration and processing"
       ],
-      "verified_technologies": ["Java", "Python", "SQL", "AWS"],
+      "verified_technologies": [
+        "Java",
+        "Python",
+        "SQL",
+        "AWS"
+      ],
       "domain": "Healthcare",
       "achievements": [],
       "data_source": "Mock"
@@ -196,7 +327,10 @@
       "responsibilities": [
         "Participate in data engineering learning and implementation activities"
       ],
-      "verified_technologies": ["Python", "SQL"],
+      "verified_technologies": [
+        "Python",
+        "SQL"
+      ],
       "domain": "Data Engineering",
       "achievements": [],
       "data_source": "Mock"
@@ -215,7 +349,11 @@
         "Integrated REST APIs with frontend modules and backend services",
         "Implemented unit tests and integration tests to improve application reliability"
       ],
-      "verified_technologies": ["React", "Node.js", "PostgreSQL"],
+      "verified_technologies": [
+        "React",
+        "Node.js",
+        "PostgreSQL"
+      ],
       "domain": "Healthcare",
       "achievements": [],
       "data_source": "Mock"
@@ -233,7 +371,11 @@
         "Built reusable Angular UI components for reporting dashboards",
         "Optimized SQL queries to improve report generation performance"
       ],
-      "verified_technologies": ["Angular", "Java", "MySQL"],
+      "verified_technologies": [
+        "Angular",
+        "Java",
+        "MySQL"
+      ],
       "domain": "Retail",
       "achievements": [],
       "data_source": "Mock"
@@ -251,7 +393,12 @@
         "Developed Django REST endpoints for shipment tracking",
         "Wrote database migrations and queries for PostgreSQL"
       ],
-      "verified_technologies": ["Python", "Django", "PostgreSQL", "Docker"],
+      "verified_technologies": [
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "Docker"
+      ],
       "domain": "Logistics",
       "achievements": [],
       "data_source": "Mock"
@@ -270,7 +417,13 @@
         "Designed the S3 and Redshift data model for trial datasets",
         "Implemented data quality checks on incoming study files"
       ],
-      "verified_technologies": ["Python", "Apache Spark", "AWS", "Amazon Redshift", "SQL"],
+      "verified_technologies": [
+        "Python",
+        "Apache Spark",
+        "AWS",
+        "Amazon Redshift",
+        "SQL"
+      ],
       "domain": "Life Sciences",
       "achievements": [
         "Reduced nightly batch processing time from 6 hours to 2 hours"
@@ -291,7 +444,13 @@
         "Built transformation layers in Snowflake and Apache Spark",
         "Led a team of 4 engineers and reviewed their code"
       ],
-      "verified_technologies": ["Python", "SQL", "Apache Spark", "Apache Airflow", "Snowflake"],
+      "verified_technologies": [
+        "Python",
+        "SQL",
+        "Apache Spark",
+        "Apache Airflow",
+        "Snowflake"
+      ],
       "domain": "Banking",
       "achievements": [],
       "data_source": "Mock"
@@ -310,7 +469,15 @@
         "Design batch ingestion pipelines with Apache Airflow and Apache Spark",
         "Provision AWS infrastructure using Terraform"
       ],
-      "verified_technologies": ["Python", "SQL", "Apache Spark", "Apache Airflow", "Snowflake", "AWS", "Terraform"],
+      "verified_technologies": [
+        "Python",
+        "SQL",
+        "Apache Spark",
+        "Apache Airflow",
+        "Snowflake",
+        "AWS",
+        "Terraform"
+      ],
       "domain": "Healthcare",
       "achievements": [],
       "data_source": "Mock"
@@ -328,7 +495,10 @@
         "Mentor engineers on data pipeline design",
         "Run monthly internal knowledge-sharing sessions"
       ],
-      "verified_technologies": ["Python", "Apache Spark"],
+      "verified_technologies": [
+        "Python",
+        "Apache Spark"
+      ],
       "domain": "Data Engineering",
       "achievements": [],
       "data_source": "Mock"
@@ -347,7 +517,13 @@
         "Led the migration of a monolith into 12 Spring Boot microservices",
         "Reviewed designs and mentored a team of 8 engineers"
       ],
-      "verified_technologies": ["Java", "Spring Boot", "Apache Kafka", "PostgreSQL", "AWS"],
+      "verified_technologies": [
+        "Java",
+        "Spring Boot",
+        "Apache Kafka",
+        "PostgreSQL",
+        "AWS"
+      ],
       "domain": "Fintech",
       "achievements": [],
       "data_source": "Mock"
@@ -366,8 +542,145 @@
         "Introduce Kubernetes-based deployment for the services",
         "Define service-level objectives with the client's platform team"
       ],
-      "verified_technologies": ["Java", "Spring Boot", "Apache Kafka", "Redis", "Kubernetes", "Terraform", "AWS"],
+      "verified_technologies": [
+        "Java",
+        "Spring Boot",
+        "Apache Kafka",
+        "Redis",
+        "Kubernetes",
+        "Terraform",
+        "AWS"
+      ],
       "domain": "Fintech",
+      "achievements": [],
+      "data_source": "Mock"
+    },
+    {
+      "assignment_id": "PA-6001",
+      "employee_id": "I2I-1150",
+      "client": "Medisphere Pharma",
+      "project": "Clinical Trials Data Lake",
+      "description": "Cloud data lake that consolidates clinical trial data from more than 15 study systems into a single governed platform for analytics and regulatory submissions. Replaced manual spreadsheet-based reporting with automated, auditable pipelines.",
+      "start_date": "2020-03-02",
+      "end_date": "2022-01-28",
+      "status": "Completed",
+      "responsibilities": [
+        "Built batch ingestion pipelines in Python and Scala on Apache Spark for clinical study data from more than 15 source systems",
+        "Designed the S3 and Amazon Redshift data model for trial, patient and site datasets",
+        "Orchestrated daily and weekly loads with Apache Airflow, including dependency handling and automated retries",
+        "Implemented data quality checks for completeness, duplicates and referential integrity on incoming study files",
+        "Applied HIPAA-aligned access controls and de-identification of patient data in the curated layer",
+        "Optimised Spark jobs and Redshift queries to cut nightly processing time",
+        "Provisioned the AWS infrastructure for the lake with Terraform",
+        "Documented data lineage and handed over runbooks to the support team"
+      ],
+      "verified_technologies": [
+        "Python",
+        "Scala",
+        "SQL",
+        "Apache Spark",
+        "Apache Airflow",
+        "AWS",
+        "Amazon Redshift",
+        "Terraform"
+      ],
+      "domain": "Life Sciences",
+      "achievements": [
+        "Reduced nightly batch processing time from 6 hours to 2 hours"
+      ],
+      "data_source": "Mock"
+    },
+    {
+      "assignment_id": "PA-6002",
+      "employee_id": "I2I-1150",
+      "client": "FinEdge Bank",
+      "project": "Regulatory Reporting Pipeline",
+      "description": "Orchestrated data pipelines that produce daily and monthly regulatory reports for a retail bank. Moved reporting logic out of legacy stored procedures into tested, version-controlled transformation layers.",
+      "start_date": "2022-02-14",
+      "end_date": "2023-12-29",
+      "status": "Completed",
+      "responsibilities": [
+        "Designed transformation layers in Snowflake using dbt models with automated tests and documentation",
+        "Built Apache Spark jobs to process high-volume transaction and ledger data",
+        "Orchestrated reporting workflows with Apache Airflow, including SLA monitoring and failure alerts",
+        "Migrated legacy SQL stored procedures into modular, version-controlled dbt models",
+        "Containerised dbt and Airflow jobs with Docker and set up CI/CD so pipeline changes were tested before release",
+        "Reconciled report totals against source ledgers in PostgreSQL to support audit reviews",
+        "Led a team of 4 engineers and reviewed their code and designs",
+        "Worked with compliance analysts to translate reporting rules into pipeline logic"
+      ],
+      "verified_technologies": [
+        "Python",
+        "SQL",
+        "Apache Spark",
+        "Apache Airflow",
+        "Snowflake",
+        "dbt",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "domain": "Banking",
+      "achievements": [],
+      "data_source": "Mock"
+    },
+    {
+      "assignment_id": "PA-6003",
+      "employee_id": "I2I-1150",
+      "client": "Roche",
+      "project": "Healthcare Data Platform",
+      "description": "Healthcare data platform for Roche that integrates clinical, claims and device data for downstream analytics teams. Combines batch and streaming ingestion on AWS and Snowflake.",
+      "start_date": "2024-01-08",
+      "end_date": null,
+      "status": "Active",
+      "responsibilities": [
+        "Lead data engineering for the platform and manage a team of 5 engineers",
+        "Design batch ingestion pipelines with Apache Airflow and Apache Spark on AWS",
+        "Build streaming ingestion of device events using Apache Kafka",
+        "Model curated healthcare datasets in Snowflake for analytics and reporting",
+        "Provision and version AWS infrastructure using Terraform",
+        "Define data quality rules and monitoring so downstream teams can trust the data",
+        "Review pull requests and mentor engineers on pipeline design and testing",
+        "Present delivery status and technical trade-offs to client stakeholders"
+      ],
+      "verified_technologies": [
+        "Python",
+        "SQL",
+        "Apache Spark",
+        "Apache Airflow",
+        "Apache Kafka",
+        "Snowflake",
+        "AWS",
+        "Terraform"
+      ],
+      "domain": "Healthcare",
+      "achievements": [],
+      "data_source": "Mock"
+    },
+    {
+      "assignment_id": "PA-6004",
+      "employee_id": "I2I-1150",
+      "client": "Internal Ideas2IT",
+      "project": "Data Engineering Guild",
+      "description": "Internal community of practice that sets data engineering standards and shares best practices across Ideas2IT delivery teams. Runs regular sessions and maintains reusable pipeline templates.",
+      "start_date": "2022-06-01",
+      "end_date": null,
+      "status": "Active",
+      "responsibilities": [
+        "Mentor engineers on data pipeline design, testing and review",
+        "Run monthly internal knowledge-sharing sessions on Spark, Airflow and Snowflake",
+        "Maintain reusable Airflow and dbt project templates for new engagements",
+        "Define data quality and code review checklists for data projects",
+        "Review architecture proposals from other delivery teams",
+        "Onboard new data engineers with a structured learning path",
+        "Collect lessons learned from client projects into internal guidelines"
+      ],
+      "verified_technologies": [
+        "Python",
+        "Apache Spark",
+        "Apache Airflow",
+        "dbt"
+      ],
+      "domain": "Data Engineering",
       "achievements": [],
       "data_source": "Mock"
     }

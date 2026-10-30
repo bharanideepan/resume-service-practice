@@ -95,7 +95,7 @@ test('unknown employee is 404; malformed id and status are 400', async () => {
 });
 
 test('every record is flagged as mock data', async () => {
-  for (const id of ['I2I-1042', 'I2I-1077', 'I2I-1090', 'I2I-1103', 'I2I-1118', 'I2I-1131']) {
+  for (const id of ['I2I-1042', 'I2I-1077', 'I2I-1090', 'I2I-1103', 'I2I-1118', 'I2I-1131', 'I2I-1150']) {
     const { body } = await get(`/employees/${id}`);
     assert.equal(body.employee.data_source, 'Mock');
     assert.ok(body.assignments.every(a => a.data_source === 'Mock'));
@@ -104,7 +104,7 @@ test('every record is flagged as mock data', async () => {
 
 test('dataset is internally consistent', async () => {
   const today = '2026-10-28';
-  for (const id of ['I2I-1042', 'I2I-1077', 'I2I-1090', 'I2I-1103', 'I2I-1118', 'I2I-1131']) {
+  for (const id of ['I2I-1042', 'I2I-1077', 'I2I-1090', 'I2I-1103', 'I2I-1118', 'I2I-1131', 'I2I-1150']) {
     const { employee, assignments } = (await get(`/employees/${id}`)).body;
     for (const a of assignments) {
       assert.match(a.start_date, /^\d{4}-\d{2}-\d{2}$/);
@@ -119,4 +119,27 @@ test('dataset is internally consistent', async () => {
       }
     }
   }
+});
+
+test('demo candidate I2I-1150 has 4 projects with 7+ facts each and 3 to 4 skills per stack', async () => {
+  const { employee, assignments } = (await get('/employees/I2I-1150')).body;
+  assert.equal(employee.name, 'Ananya Krishnan');
+  assert.equal(assignments.length, 4);
+  for (const a of assignments) {
+    assert.ok(a.responsibilities.length >= 7, `${a.assignment_id} has only ${a.responsibilities.length} responsibilities`);
+    assert.ok(a.description.split(/(?<=[.!?])\s+/).length >= 2, `${a.assignment_id} description should be 2+ sentences`);
+    assert.ok(a.verified_technologies.length >= 4, `${a.assignment_id} lists too few technologies`);
+  }
+  // 13 primary skills = four stacks of 3 to 4 (languages, cloud, processing, storage), every one backed by a project.
+  assert.ok(employee.primary_skills.length >= 12 && employee.primary_skills.length <= 16);
+  const used = new Set(assignments.flatMap(a => a.verified_technologies));
+  for (const s of employee.primary_skills) assert.ok(used.has(s), `profile skill ${s} has no project evidence`);
+  // Every technology used on a project is also in the profile skills.
+  const profile = new Set(employee.primary_skills);
+  for (const a of assignments) for (const t of a.verified_technologies) assert.ok(profile.has(t), `${t} missing from profile skills`);
+  // Joined 2020 after 3.6 years elsewhere: profile total must be consistent with the dates.
+  assert.ok(employee.total_experience_years >= 10 && employee.total_experience_years <= 10.5);
+  assert.equal(employee.prior_employment.length, 1);
+  // Overlaps are intentional (guild runs alongside projects), so the test data exercises overlap handling.
+  assert.ok(assignments.filter(a => a.end_date === null).length === 2);
 });
